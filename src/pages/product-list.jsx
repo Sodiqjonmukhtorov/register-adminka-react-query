@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import { ProductCard } from "./ProductCard"; // Import ProductCard
+import { ProductCard } from "./ProductCard"; 
 
 const ProductList = () => {
   const [products, setProducts] = useState([
-    // Example product data
     { id: 1, name: "Product 1", img: "/path/to/image.jpg", price: 100, categoryId: 1 },
     { id: 2, name: "Product 2", img: "/path/to/image.jpg", price: 200, categoryId: 2 },
   ]);
 
   const handleEdit = (id) => {
-    // Implement edit logic
     console.log("Edit product with id:", id);
   };
 
